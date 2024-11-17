@@ -1,0 +1,114 @@
+{
+  "id": "3958067",
+  "name": "tv1-pc-client",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33987002",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "33987169",
+      "name": "进入",
+      "font_class": "jinru",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "34711696",
+      "name": "linkedin",
+      "font_class": "linkedin",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "26754663",
+      "name": "Linkedin-B",
+      "font_class": "Linkedin-B",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "12160505",
+      "name": "social-1_round-linkedin",
+      "font_class": "social-_round-linkedin",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "34708689",
+      "name": "社交媒体",
+      "font_class": "line",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "634378",
+      "name": "谷歌_google115",
+      "font_class": "gugegoogle115",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "7594051",
+      "name": "24gl-playCircle",
+      "font_class": "24gl-playCircle",
+      "unicode": "ea6e",
+      "unicode_decimal": 60014
+    },
+    {
+      "icon_id": "407309",
+      "name": "勾勾",
+      "font_class": "gougou",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "515110",
+      "name": "facebook_facebook51",
+      "font_class": "facebookfacebook51",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "515380",
+      "name": "推特_twitter44",
+      "font_class": "tuitetwitter44",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "1304890",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "5387583",
+      "name": "箭头_向右",
+      "font_class": "jiantou_xiangyou",
+      "unicode": "eb08",
+      "unicode_decimal": 60168
+    },
+    {
+      "icon_id": "10156369",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "18811212",
+      "name": "剑",
+      "font_class": "jian",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    }
+  ]
+}
