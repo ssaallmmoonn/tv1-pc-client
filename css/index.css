@@ -1,0 +1,1239 @@
+/* index网页的css存放 */
+
+.html {
+    width: 100%;
+    height: auto;
+}
+
+.body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* wrapper版心部分 */
+.wrapper {
+    width: 1316px;
+    margin: 0 auto;
+}
+
+/* header部分 */
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 900px;
+}
+
+/* header内的大背景 */
+.header .topbgc {
+    position: relative;
+    z-index: 1;
+    height: 880px;
+    background-image: linear-gradient(to right, #422384,
+            #2994a4);
+    overflow: hidden;
+}
+
+/* 上方导航区域 */
+.header .topnav {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -658px;
+    height: 110px;
+    /* background-color: green; */
+    border-bottom: 0.5px solid rgba(0, 0, 0, .1);
+}
+
+/* 导航区域左侧的logo */
+.header .logo {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    /* height: 110px; */
+    /* background-color: pink; */
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 对logo做了一些标签语义化的优化 */
+.header .logo a {
+    font-size: 0;
+}
+
+.header .topnav .words li a {
+    float: right;
+    /* background-color: pink; */
+    margin-right: 36px;
+
+    font-size: 18px;
+    line-height: 110px;
+    color: #d5d8e6;
+}
+
+.header .topnav .words li a:hover {
+    color: #86efd3;
+}
+
+.header .topnav .words span {
+    /* float: right; */
+    display: inline-block;
+    color: #d5d8e6;
+    font-size: 18px;
+}
+
+.header .topnav .words span:hover {
+    color: #86efd3;
+}
+
+.header .topnav .words .home {
+    color: #86efd3;
+}
+
+/* 接下来对导航右侧文字下拉列表部分进行各自的hover效果 */
+.header .topnav .words .about,
+.header .topnav .words .service,
+.header .topnav .words .blog {
+    position: relative;
+}
+
+.header .topnav .words .about .select {
+    position: absolute;
+    z-index: 2;
+    right: 390px;
+    top: 115px;
+    width: 130px;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.header .topnav .words .service .select {
+    position: absolute;
+    z-index: 2;
+    right: 295px;
+    top: 115px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.header .topnav .words .blog .select {
+    position: absolute;
+    z-index: 2;
+    right: 210px;
+    top: 115px;
+    width: 150px;
+    height: 180px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.header .topnav .words .about .select a,
+.header .topnav .words .service .select a,
+.header .topnav .words .blog .select a {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    line-height: 300%;
+    font-size: 15px;
+    color: #fff;
+}
+
+.header .topnav .words .blog .select a {
+    height: 33%;
+    line-height: 350%;
+}
+
+.header .topnav .words .about .select a:hover,
+.header .topnav .words .service .select a:hover,
+.header .topnav .words .blog .select a:hover {
+    color: rgb(167, 230, 167);
+}
+
+.header .topnav .words .about:hover .select,
+.header .topnav .words .service:hover .select,
+.header .topnav .words .blog:hover .select {
+    opacity: 1;
+}
+
+/* 对导航右侧文字下拉列表部分的伪类到此结束 */
+
+.header .banner .left {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.header .banner .right {
+    position: absolute;
+    right: 0;
+    top: 400px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.header .banner .left .iconfont,
+.header .banner .right .iconfont {
+    display: inline-block;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* 为两个箭头添加伪类效果 */
+.header .banner .left:hover,
+.header .banner .right:hover {
+    background-color: skyblue;
+    border: 2px solid skyblue;
+}
+
+
+.header .banner h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 160px;
+    color: #fffeff;
+    font-size: 54px;
+}
+
+.longsentence {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 300px;
+    color: #e8ebec;
+    font-size: 18px;
+}
+
+.banner .inputpart {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 365px;
+    width: 900px;
+    height: 70px;
+    background-color: #222666;
+}
+
+.inputpart .input1 {
+    /* 因为父级的绝对定位传承，子级拥有行内块特点 */
+    float: left;
+    margin: 8px 8px;
+    padding-left: 20px;
+    line-height: 58px;
+    width: 420px;
+    height: 54px;
+    background-color: #fff;
+}
+
+#i1::placeholder {
+    font-size: 18px;
+    color: #9ca0a6;
+}
+
+.inputpart .input2 {
+    float: left;
+    margin: 8px 8px;
+    padding-left: 20px;
+    line-height: 54px;
+    width: 215px;
+    height: 54px;
+    background-color: #fff;
+}
+
+#i2::placeholder {
+    font-size: 18px;
+    color: #9ca0a6;
+}
+
+.inputpart a {
+    display: inline-block;
+    margin: 8px 8px;
+    width: 215px;
+    height: 54px;
+    background-color: #f96e48;
+    text-align: center;
+    line-height: 54px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.bottomimg1 img {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 用来遮挡bottomimg2一部分的小盒子 */
+.above {
+    position: absolute;
+    top: 798px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25px;
+    width: 100%;
+    background-image: linear-gradient(to right, #422384,
+            #2994a4);
+
+}
+
+.bottomimg2 img {
+    position: relative;
+    z-index: -100;
+    top: 810px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .slogo {
+    transition: all .5s;
+    width: 32px;
+    height: 34px;
+    background-image: url(../images/small-logo.png);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    animation: slogo 3s infinite;
+}
+
+/* 给slogo添加自动旋转消失的动画效果 */
+/* 定义动画 */
+@keyframes slogo {
+    50% {
+        transform: scale(0.6) rotate(180deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.main .box1 .sen1,
+.main .box1 .sen2,
+.main .box1 .sen3 {
+    text-align: center;
+}
+
+.main .box1 .sen1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: #a0a3a2;
+}
+
+.main .box1 .sen2,
+.main .box1 .sen3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main .box1 .threeimgs {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1050px;
+    height: 420px;
+}
+
+.main .box1 .threeimgs .line {
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    width: 1050px;
+    height: 5px;
+    background-color: rgb(15, 15, 15, .1);
+    box-shadow: 0 0 95px;
+}
+
+.main .box1 .threeimgs .img1 {
+    float: left;
+    position: relative;
+    padding: 50px 50px;
+    width: 350px;
+    height: 420px;
+    background-color: #08caaf;
+    overflow: hidden;
+}
+
+.main .box1 .threeimgs .img1::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 250px;
+    height: 205px;
+    background-image: url(../images/back-icon-1.png);
+    transition: all 0.7s;
+}
+
+.main .box1 .threeimgs .img2 {
+    float: left;
+    position: relative;
+    padding: 50px 50px;
+    width: 350px;
+    height: 420px;
+    background-color: #f96e48;
+    overflow: hidden;
+}
+
+.main .box1 .threeimgs .img2::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 250px;
+    height: 205px;
+    background-image: url(../images/back-icon-1.png);
+    transition: all 0.7s;
+}
+
+.main .box1 .threeimgs .img3 {
+    float: left;
+    position: relative;
+    padding: 50px 50px;
+    width: 350px;
+    height: 420px;
+    background-color: #41adf3;
+    overflow: hidden;
+}
+
+.main .box1 .threeimgs .img3::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 250px;
+    height: 205px;
+    background-image: url(../images/back-icon-1.png);
+    transition: all 0.7s;
+}
+
+.main .box1 .threeimgs .img1:hover:after,
+.main .box1 .threeimgs .img2:hover:after,
+.main .box1 .threeimgs .img3:hover:after {
+    transform: scale(1.5) rotate(360deg);
+}
+
+.main .box1 .threeimgs .img1 .mask,
+.main .box1 .threeimgs .img2 .mask,
+.main .box1 .threeimgs .img3 .mask {
+    position: absolute;
+    left: 175px;
+    top: 420px;
+    width: 350px;
+    height: 180px;
+    background-color: rgba(15, 15, 15, .1);
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.main .box1 .threeimgs .img1:hover .mask,
+.main .box1 .threeimgs .img2:hover .mask,
+.main .box1 .threeimgs .img3:hover .mask {
+    opacity: 1;
+    transform: translate(-175px, -180px);
+}
+
+/* 三张图下方灰线位置的文字 */
+.main .box1 .threeimgs .word {
+    margin-top: 34px;
+    text-align: center;
+    color: #fff;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 灰线下方的三行小文字 */
+.main .box1 .threeimgs .smallword {
+    margin-top: 20px;
+    text-align: center;
+    color: #f0eeee;
+    font-size: 12px;
+}
+
+.main .box1 .bottom {
+    margin: 100px auto;
+    /* 消除浮动的影响 */
+    overflow: hidden;
+}
+
+.main .box1 .bottom .left {
+    float: left;
+    width: 448px;
+    height: 478px;
+    background-image: url(../images/back-icon-2.png);
+    background-repeat: no-repeat;
+    background-position: 32px 60px;
+    /* 解决塌陷现象,img 以行内块的方式display */
+    overflow: hidden;
+}
+
+.main .box1 .bottom .right {
+    float: left;
+    width: 448px;
+    height: 478px;
+    background-image: url(../images/back-icon-2.png);
+    background-repeat: no-repeat;
+    background-position: 32px 60px;
+    /* 解决塌陷现象,img 以行内块的方式display */
+    overflow: hidden;
+}
+
+.main .box1 .bottom .left h4:hover,
+.main .box1 .bottom .right h4:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+.main .box1 .bottom .left span,
+.main .box1 .bottom .right span {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.main .box1 .bottom .left img,
+.main .box1 .bottom .right img {
+    display: inline-block;
+    margin-top: 65px;
+    margin-left: 0;
+}
+
+.main .box1 .bottom .left h4,
+.main .box1 .bottom .right h4 {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgb(82, 81, 81);
+}
+
+.main .box1 .bottom .left h6,
+.main .box1 .bottom .right h6 {
+    margin-top: 16px;
+    margin-left: 40px;
+    font-weight: normal;
+    font-size: 10px;
+    color: grey;
+}
+
+.main .box1 .bottom .left ul,
+.main .box1 .bottom .right ul {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.main .box1 .bottom .left li,
+.main .box1 .bottom .right li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.main .box1 .bottom .left li span,
+.main .box1 .bottom .right li span {
+    display: inline;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 10px;
+    color: skyblue;
+}
+
+.main .box1 .bottom .middle {
+    float: left;
+    position: relative;
+    width: 420px;
+    height: 478px;
+    background-color: #f96e48;
+}
+
+.main .box1 .middle .top-word {
+    width: 260px;
+    height: 80px;
+    text-align: center;
+    margin: 60px auto;
+    font-size: 42px;
+    color: #fdfef3;
+}
+
+.main .box1 .middle .iconfont {
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+}
+
+/* 媒体播放键的圆背景 */
+.main .box1 .middle .iconfont .iconbgc1 {
+    position: absolute;
+    left: 37%;
+    top: 46%;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, .2);
+    animation: greybgc 0.9s infinite;
+}
+
+.main .box1 .middle .iconfont .iconbgc2 {
+    position: absolute;
+    left: 37%;
+    top: 46%;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, .2);
+    animation: greybgc 0.9s 1s infinite;
+}
+
+.main .box1 .middle .iconfont .iconbgc3 {
+    position: absolute;
+    left: 37%;
+    top: 46%;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, .2);
+    animation: greybgc 0.9s 2s infinite;
+}
+
+/* 以下是关于“媒体播放键的圆背景”相关的动画效果 */
+@keyframes greybgc {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    25% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.6);
+        opacity: 0.3;
+    }
+
+    /* 75% {
+        transform: scale(2);
+        opacity: 0;
+    } */
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.main .box1 .middle .bottom-word {
+    margin: 30px auto;
+    text-align: center;
+    color: #fdfef3;
+    font-size: 20px;
+}
+
+.main .box2 {
+    margin: 0 auto;
+    width: 1110px;
+    height: 970px;
+    /* 看范围弄一个粉背景 */
+    /* background-color: pink; */
+}
+
+.main .box2 .sen1 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.main .box2 .sen2 {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: grey;
+}
+
+.main .box2 ul li {
+    float: left;
+    position: relative;
+    margin: 90px auto;
+    text-align: center;
+    width: 370px;
+    height: 280px;
+}
+
+.main .box2 li .greybgc {
+    position: absolute;
+    left: 112px;
+    top: -42px;
+    width: 140px;
+    height: 120px;
+    background-color: #d6d2d2;
+    opacity: 0.2;
+    border-radius: 15%;
+    transform: rotate(40deg);
+    transition: all 0.8s;
+}
+
+/* 灰色背景图的伪类 */
+.main .box2 li:hover .greybgc {
+    transform: rotate(140deg);
+    background-color: rgb(48, 185, 240);
+}
+
+.main .box2 li img {
+    position: absolute;
+    left: 154px;
+    top: -15px;
+    z-index: 2;
+}
+
+.main .box2 li h3 {
+    margin-top: 120px;
+    font-size: 30px
+}
+
+.main .box2 li .word {
+    margin: 20px auto;
+    width: 300px;
+    color: grey;
+}
+
+.main .bluebgi {
+    position: relative;
+    margin-left: -280px;
+    margin-top: 150px;
+    width: 1876px;
+    height: 575px;
+    background-image: url(../images/back-icon-3.png);
+    background-repeat: no-repeat;
+    /* 消除塌陷现象 */
+    overflow: hidden;
+}
+
+.main .bluebgi .slogo {
+    position: absolute;
+    left: 600px;
+    top: 58px;
+}
+
+.main .bluebgi h3 {
+    position: absolute;
+    left: 400px;
+    top: 110px;
+    width: 500px;
+    font-size: 40px;
+}
+
+/* 定义people图处的动画 */
+/* 第一种：缩放型 */
+@keyframes people1 {
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes people2 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main .bluebgi li .circle1 {
+    position: absolute;
+    left: 530px;
+    top: 180px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../images/people-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people1 2.5s infinite alternate linear;
+}
+
+.main .bluebgi li .circle2 {
+    position: absolute;
+    left: 640px;
+    top: 210px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../images/people-2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people1 2.5s 0.5s infinite alternate linear;
+}
+
+.main .bluebgi li .circle3 {
+    position: absolute;
+    left: 420px;
+    top: 240px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../images/people-3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people1 2.5s 1s infinite alternate linear;
+}
+
+.main .bluebgi li .circle4 {
+    position: absolute;
+    left: 530px;
+    top: 295px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    background-image: url(../images/people-4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people2 10s 1s infinite linear;
+}
+
+.main .bluebgi li .circle5 {
+    position: absolute;
+    left: 430px;
+    top: 370px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../images/people-5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people1 2.5s 0.5s infinite alternate linear;
+}
+
+.main .bluebgi li .circle6 {
+    position: absolute;
+    left: 640px;
+    top: 300px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../images/people-6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people1 2.5s 1s infinite alternate linear;
+}
+
+.main .bluebgi li .circle7 {
+    position: absolute;
+    left: 580px;
+    top: 400px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../images/people-7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: people1 2.5s 0.2s infinite alternate linear;
+}
+
+.main .bluebgi .right1 {
+    position: absolute;
+    left: 920px;
+    top: 120px;
+    width: 320px;
+    height: 200px;
+    background-color: #f7f7f7;
+}
+
+.main .bluebgi .right2 {
+    position: absolute;
+    left: 1280px;
+    top: 120px;
+    width: 320px;
+    height: 200px;
+    background-color: #f7f7f7;
+}
+
+.main .bluebgi .right1 .right11,
+.main .bluebgi .right2 .right21 {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 300px;
+    font-size: 15px;
+    color: grey;
+}
+
+.main .bluebgi .right1 .right12,
+.main .bluebgi .right2 .right22 {
+    margin-left: 25px;
+    margin-top: 18px;
+}
+
+.main .bluebgi .right1 .German,
+.main .bluebgi .right2 .England {
+    color: grey;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+/* 盒子右下方(两个文字盒子下方)的两个箭头 */
+.main .bluebgi .jiantou .iconfont {
+    position: absolute;
+    left: 1270px;
+    top: 370px;
+    /* transform: rotate(180deg); */
+    font-size: 32px;
+    color: #caeca6;
+}
+
+#diff {
+    position: absolute;
+    left: 1220px;
+    top: 370px;
+    transform: rotate(180deg);
+    font-size: 32px;
+    color: #caeca6;
+}
+
+.main .box4 h4 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.main .box4 .words {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+}
+
+.main .box4 .threeimgs {
+    position: relative;
+    margin: 40px auto;
+    width: 1120px;
+    height: 600px;
+    /* background-color: pink; */
+    /* 回车导致三个图片盒子之间有间隙 */
+    font-size: 0;
+}
+
+.main .box4 .threeimgs .img {
+    float: left;
+    margin-right: 20px;
+    width: 360px;
+    height: 600px;
+    transition: all .5s;
+}
+
+/* 以下是给三张图片添加mask伪类效果 */
+.main .box4 .threeimgs .img:after,
+.main .box4 .threeimgs .img:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 360px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: .5s;
+}
+
+.main .box4 .threeimgs .img2:after,
+.main .box4 .threeimgs .img2:before {
+    content: '';
+    position: absolute;
+    left: 380px;
+    top: 0;
+    width: 360px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: .5s;
+}
+
+.main .box4 .threeimgs .img3:after,
+.main .box4 .threeimgs .img3:before {
+    content: '';
+    position: absolute;
+    left: 760px;
+    top: 0;
+    width: 360px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: .5s;
+}
+
+.main .box4 .threeimgs .img:hover:after,
+.main .box4 .threeimgs .img:hover:before {
+    height: 50%;
+    opacity: 1;
+}
+
+/* 以上是给三张图片添加mask伪类效果 */
+
+/* 消除第3n个盒子的右外边距 */
+.main .box4 .threeimgs.threeimgs .img:nth-child(3n) {
+    margin-right: 0;
+}
+
+.main .box4 .img p {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: grey;
+}
+
+.main .box4 .img .word1 {
+    display: block;
+    margin-top: 20px;
+    width: 360px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .box4 .img .word2 {
+    display: block;
+    margin-top: 20px;
+    width: 360px;
+    font-size: 15px;
+    color: grey;
+}
+
+.main .box4 .img .readmore {
+    display: block;
+    margin-top: 20px;
+    width: 360px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .7);
+}
+
+.main .box4 .img .readmore:hover {
+    color: rgb(46, 173, 241);
+}
+
+.main .box4 .img .readmore .iconfont {
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 15px;
+    color: skyblue;
+}
+
+.main .box5 {
+    float: left;
+    position: relative;
+    /* 提高图层数，遮挡footer背景色 */
+    z-index: 5;
+    margin-left: 96px;
+    width: 1120px;
+    height: 200px;
+    border-top: 4px solid rgb(84, 233, 191);
+    background-color: #fff;
+}
+
+.main .box5 h3 {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.main .box5 p {
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 18px;
+    color: grey;
+}
+
+.main .box5 a {
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    width: 200px;
+    height: 50px;
+    background-color: #f96e48;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* 下列部分是给橙色按钮添加伪类效果 */
+.main .box5 a div {
+    position: relative;
+}
+
+.main .box5 a div:after,
+.main .box5 a div:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #f96e48;
+    z-index: -2;
+}
+
+.main .box5 a div:hover {
+    z-index: 1;
+    background: transparent;
+}
+
+.main .box5 a div:before {
+    transition: .5s;
+    background: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
+.main .box5 a div:hover:after,
+.main .box5 a div:hover:before {
+    width: 100%;
+}
+
+/* 上面部分是给橙色按钮添加伪类效果 */
+
+.footer {
+    position: relative;
+    top: 3900px;
+    z-index: -1;
+    margin: 160px auto 0;
+    height: 600px;
+    width: 100%;
+    background-color: #214886;
+}
+
+/* 这里再内嵌一个盒子是为了放内部几个元素来满足版心 */
+.box-footer {
+    position: relative;
+    left: 0;
+    width: 1080px;
+}
+
+.footer .left {
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 200px;
+    width: 220px;
+    height: 400px;
+}
+
+.footer .left .copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer .left ul {
+    margin-top: 35px;
+}
+
+.footer .left ul li {
+    display: inline;
+}
+
+.footer .left ul li a {
+    transition: all .5s;
+}
+
+.footer .left ul li a .iconfont::before {
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 16px;
+}
+
+.footer .left ul li a:hover .iconfont::before {
+    background-color: #35a6f5;
+}
+
+.footer .left ul li span {
+    font-size: 28px;
+    padding-right: 6px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer .contact,
+.footer .service,
+.footer .company {
+    float: right;
+    /* 相对于之前的位置进行定位 */
+    position: relative;
+    top: 120px;
+    width: 270px;
+    color: rgba(255, 255, 255);
+    font-size: 40px;
+}
+
+.footer .contact ul,
+.footer .service ul,
+.footer .company ul {
+    margin-top: 18px;
+}
+
+.footer .contact ul li,
+.footer .service ul li a,
+.footer .company ul li a {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 20px;
+}
+
+.footer .service ul li a:hover,
+.footer .company ul li a:hover {
+    color: #fff;
+}
+
+.mask {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 1920px;
+    height: 120px;
+    /* background-color: pink; */
+
+    text-indent: -1920px;
+    overflow: hidden;
+}
+
+.mask img {
+    filter: drop-shadow(1920px 0 #214886);
+}
