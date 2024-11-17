@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3958067 */
+  src: url('iconfont.woff2?t=1680173639425') format('woff2'),
+       url('iconfont.woff?t=1680173639425') format('woff'),
+       url('iconfont.ttf?t=1680173639425') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fanhui:before {
+  content: "\e61e";
+}
+
+.icon-jinru:before {
+  content: "\e621";
+}
+
+.icon-linkedin:before {
+  content: "\e603";
+}
+
+.icon-Linkedin-B:before {
+  content: "\e61a";
+}
+
+.icon-social-_round-linkedin:before {
+  content: "\e686";
+}
+
+.icon-line:before {
+  content: "\e601";
+}
+
+.icon-gugegoogle115:before {
+  content: "\e653";
+}
+
+.icon-24gl-playCircle:before {
+  content: "\ea6e";
+}
+
+.icon-gougou:before {
+  content: "\e626";
+}
+
+.icon-facebookfacebook51:before {
+  content: "\e600";
+}
+
+.icon-tuitetwitter44:before {
+  content: "\e6ef";
+}
+
+.icon-sousuo:before {
+  content: "\e622";
+}
+
+.icon-jiantou_xiangyou:before {
+  content: "\eb08";
+}
+
+.icon-gengduo:before {
+  content: "\e64f";
+}
+
+.icon-jian:before {
+  content: "\e63e";
+}
+
